@@ -15,7 +15,7 @@ mongoose.connect(connectionString, {
     useFindAndModify:false
 }, (err) => {
    if(err) {
-       console.log(err);
+       console.log(err); 
    }
    else {
        console.log("database connection is successful");
