@@ -7,7 +7,7 @@ app.use(express.json())
 
 
 const mongoose = require("mongoose")
-const connectionString = "mongodb://localhost:27017/bookshop"
+const connectionString = "mongodb://localhost:process.env.PORT || 27017/bookshop"
 //connectionClient
 mongoose.connect(connectionString, {
     useNewUrlParser:true,
